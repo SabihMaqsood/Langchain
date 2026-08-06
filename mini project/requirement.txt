@@ -1,8 +1,0 @@
-LangChain
-langchain-google-genai
-dotenv
-Pydantic
-streamlit
-langchain_core
-
-
