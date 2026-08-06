@@ -1,7 +1,0 @@
-langchain
-langchain_core
-python-dotenv
-langchain-groq
-
-
-
