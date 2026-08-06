@@ -1,12 +1,24 @@
-from langchain_google_genai import ChatGoogleGenerativeAI
+# from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 from dotenv import load_dotenv
 import streamlit as st
 from typing import TypedDict, Annotated, Optional, Literal
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+
 
 load_dotenv()
 
-model = ChatGoogleGenerativeAI(model="gemini-3.5-flash")
+
+llm = HuggingFaceEndpoint(
+    repo_id="meta-llama/Llama-3.1-8B-Instruct",
+    task="text-generation"
+)
+
+model = ChatHuggingFace(llm=llm)
+
+
+
+# model = ChatGoogleGenerativeAI(model="gemini-3.4-flash")
 
 
 class HospitalReview(TypedDict):

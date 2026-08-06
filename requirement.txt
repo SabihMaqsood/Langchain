@@ -1,5 +1,6 @@
 langchain-google-genai
 langchain-huggingface
+langchain-groq
 langchain-community
 sentence-transformers
 python-dotenv
@@ -7,5 +8,5 @@ scikit-learn
 numpy
 streamlit
 langchain_core.prompts
-
+langchain
 
